@@ -1,0 +1,91 @@
+{
+  "dataset": "Synthetic customer behaviour dataset reused from Week 1",
+  "total_rows_after_basic_checks": 483,
+  "feature_columns": [
+    "age",
+    "annual_income",
+    "purchase_frequency",
+    "days_since_last_purchase",
+    "gender",
+    "city_tier",
+    "membership",
+    "preferred_category"
+  ],
+  "classification_train_rows": 386,
+  "classification_test_rows": 97,
+  "regression_train_rows": 386,
+  "regression_test_rows": 97,
+  "classification_results": [
+    {
+      "model": "Logistic Regression",
+      "accuracy": 0.6288659793814433,
+      "precision": 0.6,
+      "recall": 0.6,
+      "f1_score": 0.6,
+      "roc_auc": 0.6452991452991453
+    },
+    {
+      "model": "Random Forest",
+      "accuracy": 0.5979381443298969,
+      "precision": 0.5882352941176471,
+      "recall": 0.4444444444444444,
+      "f1_score": 0.5063291139240507,
+      "roc_auc": 0.6192307692307693
+    },
+    {
+      "model": "K-Nearest Neighbors",
+      "accuracy": 0.5979381443298969,
+      "precision": 0.59375,
+      "recall": 0.4222222222222222,
+      "f1_score": 0.4935064935064935,
+      "roc_auc": 0.594017094017094
+    },
+    {
+      "model": "Decision Tree",
+      "accuracy": 0.5257731958762887,
+      "precision": 0.48717948717948717,
+      "recall": 0.4222222222222222,
+      "f1_score": 0.4523809523809524,
+      "roc_auc": 0.5506410256410256
+    }
+  ],
+  "classification_cross_validation": [
+    {
+      "model": "Logistic Regression",
+      "cv_f1_mean": 0.6432226507283715,
+      "cv_f1_std": 0.031205367147637886
+    },
+    {
+      "model": "Decision Tree",
+      "cv_f1_mean": 0.5757564643315606,
+      "cv_f1_std": 0.06740962678673136
+    },
+    {
+      "model": "Random Forest",
+      "cv_f1_mean": 0.6270358006216186,
+      "cv_f1_std": 0.040857578260778474
+    },
+    {
+      "model": "K-Nearest Neighbors",
+      "cv_f1_mean": 0.5262891099510818,
+      "cv_f1_std": 0.045808485860761465
+    }
+  ],
+  "regression_results": [
+    {
+      "model": "Linear Regression",
+      "MAE": 782.4098161713287,
+      "RMSE": 1715.3986699530524,
+      "R2": -0.03233475809810393
+    },
+    {
+      "model": "Random Forest Regressor",
+      "MAE": 834.7413623176627,
+      "RMSE": 1741.1659592516662,
+      "R2": -0.06358143430060736
+    }
+  ],
+  "best_classifier_by_f1": "Logistic Regression",
+  "best_regressor_by_rmse": "Linear Regression",
+  "note": "Synthetic educational data; results demonstrate workflow, not real-world predictive performance."
+}
